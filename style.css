@@ -1,0 +1,48 @@
+
+/*Seudo Calses*/
+h1{
+    text-align: center;
+}
+
+a{
+  color:black;
+  font-size: 1em;
+  text-decoration: none;  
+}
+/*cuando el enlace sea "visited este pueda cambiar de estilo 
+y de color"*/
+
+a:visited{
+  color:rgb(162, 145, 189);
+}
+/*Seudo-clase hover*/
+a:hover{
+    color:rgb(112, 163, 180);
+    text-decoration: overline palegreen;
+}
+/*Seudo-clase active*/
+a:active{
+    color:black;
+    font-size: 1.5em;
+}
+/*odd = impares y even pares*/
+li:nth-child(odd){
+    background-color: lightgreen;
+}
+p:nth-child(even){
+    background-color: lightpink;
+}
+/*Seudo-Elementos ahora se lo utilizara con ":" */
+h1::first-letter{
+    border: 1.5px solid peru;
+    background-color: bisque;
+}
+
+h2::first-letter{
+    border: 1.5px solid black;
+    background-color: bisque;
+}
+
+li::after{
+    content:'∻';
+}
